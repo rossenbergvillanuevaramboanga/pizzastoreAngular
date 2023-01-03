@@ -1,1 +1,11 @@
-<p>navbar works!</p>
+<mat-toolbar color="primary">
+  <button mat-button routerLink="/cliente/list">Cliente</button>
+  <button mat-button routerLink="/pizza/list">Pizza</button>
+  <button mat-button routerLink="/ordine/list">Ordine</button>
+  <span class="example-spacer"></span>
+  <!--<div>
+    <span>{{ (authService.getUserLogged() | async)?.username }}</span>
+  </div>
+  <button mat-button color="warn" (click)="logout()">Logout</button>
+  -->
+</mat-toolbar>
