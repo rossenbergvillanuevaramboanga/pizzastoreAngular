@@ -1,8 +1,14 @@
 <mat-toolbar color="primary">
-  <button mat-button routerLink="/cliente/list">Cliente</button>
-  <button mat-button routerLink="/pizza/list">Pizza</button>
-  <button mat-button routerLink="/ordine/list">Ordine</button>
-  <span class="example-spacer"></span>
+  <mat-toolbar-row>
+    <span><mat-icon>local_pizza</mat-icon>PIZZA STORE</span>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <button mat-button routerLink="/cliente/list"><mat-icon>groups</mat-icon> Clienti</button>
+    <button mat-button routerLink="/pizza/list"><mat-icon>local_pizza</mat-icon> Pizze</button>
+    <button mat-button routerLink="/ordine/list"><mat-icon>article</mat-icon> Ordini</button>
+    <span class="example-spacer"></span>
+  </mat-toolbar-row>
+
   <!--<div>
     <span>{{ (authService.getUserLogged() | async)?.username }}</span>
   </div>

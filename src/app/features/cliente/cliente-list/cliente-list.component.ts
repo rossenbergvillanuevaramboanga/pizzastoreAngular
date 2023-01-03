@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {Cliente} from "../../../core/models/cliente";
-
 @Component({
   selector: 'app-cliente-list',
   templateUrl: './cliente-list.component.html',
