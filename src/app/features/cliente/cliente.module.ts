@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes} from "@angular/router";
 import { ClienteListComponent } from './cliente-list/cliente-list.component';
+import {MaterialModule} from "../../shared/material.module";
 
 
 const routes: Routes = [
@@ -17,7 +18,8 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    MaterialModule
   ]
 })
 export class ClienteModule { }

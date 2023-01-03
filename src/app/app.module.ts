@@ -5,8 +5,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { FooterComponent } from './core/components/footer/footer.component';
-import {MaterialModule} from "./shared/material.module";
 import { AppRoutingModule } from './app-routing.module';
+import {SharedModule} from "./shared/shared.module";
+import {MaterialModule} from "./shared/material.module";
 
 @NgModule({
   declarations: [
@@ -17,8 +18,9 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule,
-    AppRoutingModule
+    SharedModule,
+    AppRoutingModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
